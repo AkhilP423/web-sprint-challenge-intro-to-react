@@ -79,11 +79,10 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Put your answers underneath the questions:
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
-React JS is simply a Javascript library. 
+React JS is simply a Javascript library that is used to create complex user interfaces. For instance, we learned how to interact with the DOM and manipulate the elements last week, but it was extremely tedious and required a lot of code. React has pre-written code that can allow us to create a UI while interacting with a "virtual" DOM, saving a lot of time.
 2. Describe component state.
-The state of a component is an object which holds information that may change over the lifetime of the component.
-A component state holds some 
+The state of a component is an object which holds information that may change over the lifetime of the component. For instance, one can render a clock that holds the "state" of the current time, and constantly changes based on time data fetched from an api.
 3. Describe props.
-Parent components pass down information to child components through the use of props.
+"Props" is a special keyword reserved in react, and it stands for properties. It allows for passing data between one component to another. However, there are limitations. Parent components must pass down information to child components through the use of props. Additionally, the props data is read-only.
 4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
-Side effects affect something outside of the current scope of the function being executed. For instance, an API request would be a side effect.
+Side effects affect something outside of the current scope of the function being executed. A good example of this is an api request. You can set a side effect to occur when you set a conditional or you can leave it as a [], in which case it will only be used when the DOM is first rendered.
