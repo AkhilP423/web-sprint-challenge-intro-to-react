@@ -19,8 +19,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
-      
+      <h1 className="Header">Major Star Wars Characters</h1>
+      {data.map(ele => {return <Character data={ele}/>}
+       )}
     </div>
   );
 }
