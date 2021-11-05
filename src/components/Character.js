@@ -1,14 +1,15 @@
 // Write your Character component here
 import React from 'react'
 import styled from 'styled-components'
-//start the styling component
 
 const StyledDiv = styled.div`
+
 .data {
     display:flex;
     flex-direction:column;
     justify-content: space-around;
 }
+
 p {
     margin:0;
     padding:0;
@@ -16,7 +17,6 @@ p {
 `
 const data = (props) => { 
     const {data} = props 
-    
     
     return  (
         <StyledDiv>
@@ -32,9 +32,6 @@ const data = (props) => {
             <p>Skin Color: {data.skin_color}</p>
         </div>
         </StyledDiv>
-    
-    
-    
     )
     }
     export default data 
